@@ -1,0 +1,2 @@
+{"model_output": {"disaster_type": "淹水", "severity": "中等", "advice": "避免涉水，遠離低窪地區", "location": null, "confidence": "低"},
+ "expect_headline": "災情：淹水（中等）"}

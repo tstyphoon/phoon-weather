@@ -1,0 +1,2 @@
+{"model_output": {"location": "新竹市", "temp_min": 22, "temp_max": 28.5, "rain_prob": 60, "wind_speed": 6.2, "confidence": "高"},
+ "expect_headline": "預報截圖：新竹市", "expect_extra": {"beaufort": 4}}
