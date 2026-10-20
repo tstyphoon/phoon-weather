@@ -25,7 +25,7 @@
 
 ## 文件
 
-- [requirements.md](requirements.md)：需求
+- [docs/requirements.md](docs/requirements.md)：需求
 - [docs/architecture.md](docs/architecture.md)：架構、四段防護、驗證清單
 - [docs/adding-a-feature.md](docs/adding-a-feature.md)：怎麼新增功能
 

@@ -21,6 +21,12 @@ class CardData:
     footer: str = ""
     color: int = DEFAULT_COLOR
 
+    @property
+    def summary(self) -> str:
+        """卡片內容的一行純文字版本（有些讀取訊息的程式看不到 embed）。"""
+        body = "；".join(f"{name}：{value}" for name, value in self.fields)
+        return f"{self.title}｜{body}" if body else self.title
+
 
 def _fmt(value) -> str:
     if isinstance(value, float):

@@ -19,6 +19,8 @@ def test_category_sample(name):
         data.update(cat.extra(dict(data)))
     card = build_card(cat, data, conf, record_id=7, nth_today=3)
     assert sample["expect_headline"] in card.title
+    assert sample["expect_headline"] in card.summary  # 純文字版也要有內容
+    assert all(value in card.summary for _, value in card.fields)
     assert "#7" in card.footer and "第 3 筆" in card.footer and conf in card.footer
     for key, value in sample.get("expect_extra", {}).items():
         assert data[key] == value

@@ -144,7 +144,8 @@ class WeatherBot(discord.Client):
             for name, value in c.fields:
                 embed.add_field(name=name[:256], value=(value or "-")[:1024], inline=False)
             embed.set_footer(text=c.footer[:2048])
-            await message.reply(embed=embed, mention_author=True, allowed_mentions=NO_MENTIONS)
+            await message.reply(c.summary[:2000], embed=embed, mention_author=True,
+                                allowed_mentions=NO_MENTIONS)
         else:
             await self._reply(message, reply.text or "")
 

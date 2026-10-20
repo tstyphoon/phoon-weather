@@ -1,6 +1,6 @@
 # 架構說明
 
-需求見 [../requirements.md](../requirements.md)。這份文件用白話說明這個專案怎麼組成、資料怎麼流動、哪裡有防護。專有名詞第一次出現時會用一句話解釋。
+需求見 [requirements.md](requirements.md)。這份文件用白話說明這個專案怎麼組成、資料怎麼流動、哪裡有防護。專有名詞第一次出現時會用一句話解釋。
 
 ## 1. 專案說明與目標
 
@@ -303,11 +303,11 @@ phoon-weather/
 │   ├── test_categories.py  # 自動檢查「所有」類別的測試樣本
 │   └── samples/            # 各類別的測試樣本
 ├── docs/
+│   ├── requirements.md     # 需求
 │   ├── architecture.md     # 就是這份
 │   └── adding-a-feature.md # 一頁：怎麼新增功能或圖片類別
 ├── .env.example            # 設定範本（不含真實值）
 ├── .gitignore              # 包含 .env 與課程要求資料夾
-├── requirements.md
 └── README.md
 ```
 
