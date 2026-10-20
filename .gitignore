@@ -221,3 +221,10 @@ __marimo__/
 
 # Course requirements (not committed)
 課程要求/
+
+# DATA_DIR contents (photos, database, Excel) - never commit
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.xlsx
